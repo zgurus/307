@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Form Validator</title>
+</head>
+
+<body>
+  <div class="container">
+    <form id="form" class="form">
+      <h2>Register With Us</h2>
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username " placeholder="Enter username" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter email" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control" >
+        <label>Please select your favorite Web language:</label>
+        <input type="radio" id="fav_lan" name="fav_lan" value="HTML" checked>
+        <label for="html">HTML</label>
+        <input type="radio" id="fav_lan" name="fav_lan" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="fav_lan" name="fav_lan" value="JAVASCRIPT">
+        <label for="javascript">JAVASCRIPT</label>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="address">Address</label>
+        <textarea id="address" name="address">
+
+        </textarea>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="password2">Confirm Password</label>
+        <input type="password" id="password2" placeholder="Enter password again" />
+        <small>Error message</small>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    
+    <div id="success_msg" style="text-align: center; color:green; font-weight: bold;margin-bottom: 15px;"></div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
+
+<script>
+
+</script>
